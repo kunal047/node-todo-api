@@ -19,4 +19,4 @@ var User = mongoose.model("User", {
 //     console.log("Unable to save ", e);
 // });
 
-// module.exports = {User};
+module.exports = {User};

@@ -1,3 +1,6 @@
+// cd "Program Files\MongoDB\Server\3.6\bin"
+// mongod.exe --dbpath "\Users\kunal\Documents\mongo-data"
+
 var express = require("express");
 var bodyParser = require("body-parser");
 
@@ -7,7 +10,7 @@ var {User} = require("./models/user");
 
 var app = express();
 
-app.use (bodyParser.json());
+app.use(bodyParser.json());
 
 app.post("/todos",  (req, res) => {
 
